@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kuber-test
+spec:
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: kuber-test
+    spec:
+      containers:
+        - name: kuber-test-pod
+          image: myver33/k8sjava
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 8080
+  selector:
+    matchLabels:
+      app: kuber-test
