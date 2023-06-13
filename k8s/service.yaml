@@ -9,4 +9,6 @@ spec:
     - protocol: "TCP"
       port: 8080
       targetPort: 8080
-  type: NodePort
+  spec:
+    type: ExternalName
+    externalName: ip172-18-0-17-ci4a63g14qbg00epbbcg.direct.labs.play-with-k8s.com
