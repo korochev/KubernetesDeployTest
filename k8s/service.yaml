@@ -10,5 +10,5 @@ spec:
       port: 8080
       targetPort: 8080
   spec:
-    type: ExternalName
-    externalName: http://ip172-18-0-17-ci4a63g14qbg00epbbcg.direct.labs.play-with-k8s.com
+    type: externalName
+    externalName: ip172-18-0-17-ci4a63g14qbg00epbbcg.direct.labs.play-with-k8s.com
